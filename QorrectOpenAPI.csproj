@@ -10,6 +10,7 @@
     <PackageReference Include="Azure.Core" Version="1.39.0" />
     <PackageReference Include="Azure.Identity" Version="1.11.2" />
     <PackageReference Include="Azure.Search.Documents" Version="11.5.1" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
   </ItemGroup>
 

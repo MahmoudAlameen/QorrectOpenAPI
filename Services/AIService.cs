@@ -50,10 +50,12 @@ namespace QorrectOpenAPI.Services
                 // نفترض أن الوثيقة الأولى تحتوي على الإجابة المطلوبة
                 var firstResult = response.GetResults().First();
                 // استرداد الإجابة من الوثيقة
-                string answer = firstResult.Document["Answer"].ToString();
+                var documentList = firstResult.Document;
+                var content = documentList.First();
+                var value = content.Value;
                 // تعيين الإجابة لخاصية StoryContent
                 //StoryContent = answer;
-                return answer;
+                return value.ToString();
             }
             else
             {
